@@ -108,6 +108,13 @@ function showCustomItem() {
 function showDeleteItem() {
   document.getElementById("content").innerHTML = "<h1>Grocery List</h1>";
   const listItems = lists[editingList];
+  const back = document.createElement("button");
+  back.textContent = "Back";
+  back.className = "big";
+  back.onclick = function() {
+    showEditTools();
+  }
+  document.getElementById("content").appendChild(back);
   for(const item in listItems) {
     const button = document.createElement("button");
     button.textContent = item + " (" + listItems[item] + "x)";
