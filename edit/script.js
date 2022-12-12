@@ -133,7 +133,7 @@ function showQuantityTool(item) {
   button.textContent = "Add";
   button.className = "big";
   button.onclick = function() {
-    alert(addItem(editingList, item, parseInt(input.value)));
+    addItem(editingList, item, parseInt(input.value));
     showEditTools();
   }
   document.getElementById("content").appendChild(button);
