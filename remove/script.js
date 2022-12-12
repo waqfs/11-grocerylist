@@ -19,7 +19,7 @@ window.onload = function() {
   back.textContent = "Back";
   back.className = "big";
   back.onclick = function() {
-    location.href = "/";
+    location.href = "grocerylist/";
   }
   document.getElementById("content").appendChild(back);
 

@@ -22,7 +22,7 @@ function button() {
   const name = document.getElementById("listName").value;
   const result = createList(name);
   if(result[1]) {
-    window.location.pathname = "edit";
+    window.location.pathname = "grocerylist/edit";
   }else {
 
   }

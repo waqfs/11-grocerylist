@@ -145,7 +145,7 @@ window.onload = function() {
   back.textContent = "Back";
   back.className = "big";
   back.onclick = function() {
-    window.location.pathname = "/";
+    window.location.pathname = "grocerylist/";
   }
   content.appendChild(back);
   for(const list in lists) {

@@ -8,20 +8,20 @@ function save() {
 
 // goto the create page
 function createList() {
-  window.location.pathname = "create";
+  window.location.pathname = "grocerylist/create";
 }
 
 // goto the edit page
 function editList() {
-  window.location.pathname = "edit";
+  window.location.pathname = "grocerylist/edit";
 }
 
 // goto the remove page
 function removeList() {
-  window.location.pathname = "remove";
+  window.location.pathname = "grocerylist/remove";
 }
 
 // goto the view page
 function viewList() {
-  window.location.pathname = "view";
+  window.location.pathname = "grocerylist/view";
 }
