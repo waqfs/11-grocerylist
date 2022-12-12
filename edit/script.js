@@ -99,7 +99,7 @@ function showCustomItem() {
   button.textContent = "Add";
   button.className = "big";
   button.onclick = function() {
-    addItem(editingList, input.value, parseInt(quantity.value));
+    addItem(editingList, input.value, parseInt(quantity.value ?? 0));
     showEditTools();
   }
   document.getElementById("content").appendChild(button);
@@ -133,7 +133,7 @@ function showQuantityTool(item) {
   button.textContent = "Add";
   button.className = "big";
   button.onclick = function() {
-    addItem(editingList, item, parseInt(input.value));
+    addItem(editingList, item, parseInt(input.value ?? 0));
     showEditTools();
   }
   document.getElementById("content").appendChild(button);
